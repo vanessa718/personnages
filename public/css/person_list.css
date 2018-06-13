@@ -54,6 +54,11 @@ footer {
 }
 .space {
 	margin: 10em;
+	background: #ffffff;
+}
+.table tr {
+	vertical-align: middle;
+	border-top: 1rem solid #ffffff;
 }
 /*===============*/
 /*  person_card  */
