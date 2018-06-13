@@ -1,0 +1,96 @@
+/*===============*/
+/*     HEADER    */
+/*===============*/
+.personList {
+	background: #636363;
+	color: #ffffff;
+	padding: 0.5em;
+	display: inline-block;
+	width: 100%;
+	font-size: 1.2em;
+	min-height: 4em;
+}
+.list_person {
+	margin-top: 0.2em;
+
+}
+.btnPersonList {
+	margin-top: 0.7em;
+}
+.person {
+	margin-top: 2em;
+}
+
+
+/*===============*/
+/*     FOOTER    */
+/*===============*/
+footer {
+	display: inline-block;
+	text-align: center;
+	width: 100%;
+	/*position: fixed;*/
+	bottom: 0;
+	margin: auto;
+	color: #ffffff;
+	background: #000000;
+	padding: 0.8em;
+}
+.linkFooter,
+.linkFooter:hover,
+.Simplon,
+.Simplon:hover {
+	color: #ffffff;
+	text-decoration: underline;
+
+}
+/*===============*/
+/*  person_list  */
+/*===============*/
+.btn-view {
+	min-width: 5em;
+	min-height: 2em;
+
+}
+.space {
+	margin: 10em;
+}
+/*===============*/
+/*  person_card  */
+/*===============*/
+.biography {
+	column-count: 2;
+  	column-gap: 2em;
+  	margin-top: 2em;
+  	margin-bottom: 3em;
+}
+.name {
+	font-size: 2em;
+}
+.job {
+	font-size: 1.5em;
+	border-bottom: 1em;
+}
+/*.job::after{
+	content: ' ';
+	position: absolute;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	align-items: center; 
+	border: 1px solid #aaa;
+	width: 80px;
+}*/
+.address {
+	background-color: grey;
+}
+
+p.text-left, p.text-right {
+	margin: 0;
+	padding: 0;
+	font-size: 0.5em;
+}
+.line hr {
+	width: 10vw;
+	border-color: black;
+}

@@ -1,0 +1,28 @@
+1 and 1
+
+ssh u93906227@home741417353.1and1-data.host
+
+Techgate21!!
+
+ls
+
+cd <folder> ou ctrl d
+
+
+
+Pour éviter de taper le mot de passe à chaque connexion ssh : ssh-copy-id u93906227@home741417353.1and1-data.host
+S'il n'y a pas de clés disponibles, il faut les générer : ssh-keygen
+Toutes ces commandes sont à exécuter en local.
+Pour aller encore plus vite, dans le fichier ~/.ssh/config:
+Host simplon-rodez
+HostName home741417353.1and1-data.host
+Port 22
+User u93906227
+À partir de maintenant on peut faire :
+ssh simplon-rodez
+pour se connecter.
+Toutes les commandes dans le terminal local !
+
+
+Pour transférer le projet vers le serveur, en local on va exécuter la commande suivante, à partir du dossier du projet :rsync -avz --exclude=.git --exclude=vendor . simplon-rodez:<mon-dossier>Il suffit de remplacer <mon-dossier> par le nom du sous-dossier du projet sur le serveur.
+Puis, sur le serveur à distance, dans le dossier du projet :composer install
