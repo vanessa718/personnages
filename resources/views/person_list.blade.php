@@ -7,12 +7,12 @@
   		<h1>Personnes</h1>
 	</div>
 	<div class="table-responsive">
-	  	<table class="table table-sm table-active">
+	  	<table class="table">
 	  		<tbody>
 	  			<tr>
   					@foreach ($personnes as $personne)
-				  		<td>{{$personne ['name']}}</td>
-				  		<td><a href="{{action('PersonneController@show', $personne['id'])}}" class="btn btn-dark btn-view">Voir</a></td>
+				  		<td class="cell">{{$personne ['name']}}</td>
+				  		<td class="cell"><a href="{{action('PersonneController@show', $personne['id'])}}" class="btn btn-dark btn-view">Voir</a></td>
 
 						@if ($personne ['id'] %3 == 0)
 							</tr><tr>

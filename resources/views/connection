@@ -26,3 +26,15 @@ Toutes les commandes dans le terminal local !
 
 Pour transférer le projet vers le serveur, en local on va exécuter la commande suivante, à partir du dossier du projet :rsync -avz --exclude=.git --exclude=vendor . simplon-rodez:<mon-dossier>Il suffit de remplacer <mon-dossier> par le nom du sous-dossier du projet sur le serveur.
 Puis, sur le serveur à distance, dans le dossier du projet :composer install
+
+
+ana@SIMOCCROD004:~/listePersonnes$ rsync -avz --exclude=.git --exclude=vendor --exclude=.cache . simplon-rodez:ana/
+ana@SIMOCCROD004:~/listePersonnes$ ssh simplon-rodez
+(uiserver):u93906227:~$ cd ana/
+(uiserver):u93906227:~/ana$ curl –versionChanger version hebergement php 7 .2
+(uiserver):u93906227:~/ana$ alias php=php7.1-cli
+(uiserver):u93906227:~/ana$ php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
+(uiserver):u93906227:~/ana$ php composer-setup.php
+(uiserver):u93906227:~/ana$ rm composer-setup.php
+(uiserver):u93906227:~/ana$ php composer.phar install
+

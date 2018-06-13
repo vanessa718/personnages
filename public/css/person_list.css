@@ -50,14 +50,16 @@ footer {
 .btn-view {
 	min-width: 5em;
 	min-height: 2em;
-
+}
+.cell {
+	background-color: #EFEFEF; 
+	
 }
 .space {
 	margin: 10em;
 	background: #ffffff;
 }
 .table tr {
-	vertical-align: middle;
 	border-top: 1rem solid #ffffff;
 }
 /*===============*/
@@ -74,18 +76,16 @@ footer {
 }
 .job {
 	font-size: 1.5em;
-	border-bottom: 1em;
 }
-/*.job::after{
+.job::after{
 	content: ' ';
-	position: absolute;
+	margin: 10px auto;
 	display: flex;
-	align-items: center;
 	justify-content: center;
 	align-items: center; 
 	border: 1px solid #aaa;
 	width: 80px;
-}*/
+}
 .address {
 	background-color: grey;
 }
@@ -95,7 +95,6 @@ p.text-left, p.text-right {
 	padding: 0;
 	font-size: 0.5em;
 }
-.line hr {
-	width: 10vw;
-	border-color: black;
+.contact {
+	word-break: break-all;
 }
